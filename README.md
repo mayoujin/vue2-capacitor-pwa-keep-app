@@ -2,32 +2,98 @@
 
 A Google Keep clone with Vue, Typescript and Firestore.
 
-Demo: https://vue-keep-sepia.vercel.app/
+This project is a simple Todo [PWA] (Progressive Web App). Based on [Vue.js] framework and [Vuetify] UI-kit technologies.
+Also, available Android and iOS hybrid mobile apps builds generation with [Capacitor 3].
 
-## Usage
+[capacitor 3]: https://capacitorjs.com/docs/v3
+[pwa]: https://developers.google.com/web/progressive-web-apps
+[todomvc]: http://todomvc.com
+[vue.js]: https://vuejs.org
+[vuetify]: https://vuetifyjs.com
 
-Create a `.env.local` file at the root path and enter your firebase project creds:
+## Live Demo
+ToDo App <a href="https://mayoujin.github.io/vue2-capacitor-pwa-keep-app" target="_blank" rel="noopener">
+Web
+</a><br/>
+<p align="center">
+<img width="33%" src="https://github.com/mayoujin/vue2-capacitor-pwa-keep-app/raw/master/public/android.snapshot.png" /><br>
+ToDo App <a href="https://github.com/mayoujin/vue2-capacitor-pwa-keep-app/raw/master/builds/android/vue2-capacitor-pwa-keep-app.apk" target="_blank" rel="noopener">
+Android APK
+</a>
+</p>
+
+## Features
+
+- Vue CLI 3 + Webpack + vue-loader for single file Vue components
+- Vue + vue-router + vuex working together
+- Vuetify a-la-carte (reduce project's size in production)
+- Progressive Web App - App manifest - Service worker - Workbox options - [Cache Google Fonts] - 100/100 Lighthouse score
+- Android and iOS Hybrid mobile apps
+
+[cache google fonts]: https://developers.google.com/web/tools/workbox/guides/common-recipes#google_fonts
+
+## Built With
+
+### Dependencies
+
+| Name         | Description                               |
+| ------------ | ----------------------------------------  |
+| [vue]        | Progressive JavaScript Framework          |
+| [vue-cli-3]  | Standard Tooling for Vue.js Development   |
+| [vue-router] | Official Router for Vue.js                |
+| [vuex]       | Centralized State Management for Vue.js   |
+| [vuetify]    | ️Material Component Framework for Vue.js  |
+
+### Development Dependencies
+
+| Name                    | Description                                  |
+| ----------------------- | -------------------------------------------- |
+| [vue/cli-plugin-babel]  | Compiler for next generation JavaScript      |
+| [vue/cli-plugin-eslint] | Pluggable JavaScript linter                  |
+| [vue/cli-plugin-pwa]    | JavaScript Library for adding support to PWA |
+| [@capacitor/*]          | A cross-platform native runtime for web apps |
+
+[vue/cli-plugin-babel]: https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel
+[vue/cli-plugin-eslint]: https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint
+[vue/cli-plugin-pwa]: https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa
+[@capacitor/*]: https://github.com/ionic-team/capacitor
+
+## Installation & Setup
+
+### Install dependencies
 
 ```
-VUE_APP_FB_API_KEY=
-VUE_APP_FB_AUTH_DOMAIN=
-VUE_APP_FB_DATABASE_URL=
-VUE_APP_FB_PROJECT_ID=
-VUE_APP_FB_STORAGE_BUCKET=
-VUE_APP_FB_MESSAGING_SENDER_ID=
-VUE_APP_FB_APP_ID=
+npm install
 ```
 
-```bash
-# Install dependencies
-$ npm install
+### Compiles and hot-reloads for development
 
-# Compiles and hot-reloads for development
-$ npm run serve
-
-# Compiles and minifies for production
-$ npm run build
-
-# Lints and fixes files
-$ npm run lint
 ```
+npm run serve
+```
+
+### Compiles and minifies for production
+
+```
+npm run build
+```
+
+### Capacitor add [Android](https://capacitorjs.com/docs/v3/android)
+
+```
+npx cap add android
+```
+
+### Open [Android Studio](https://capacitorjs.com/docs/v3/getting-started/environment-setup#android-development)
+
+```
+npx cap open android
+```
+
+### Capacitor [sync](https://capacitorjs.com/docs/v3/cli/sync)
+
+```
+npx cap sync
+```
+
+### Android [Troubleshooting](https://capacitorjs.com/docs/v3/android/troubleshooting)

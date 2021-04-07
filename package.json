@@ -1,11 +1,10 @@
 {
-  "name": "vue-keep",
+  "name": "vue2-capacitor-pwa-keep-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -19,6 +18,9 @@
     "vuex-class": "^0.3.2"
   },
   "devDependencies": {
+    "@capacitor/android": "^3.0.0-rc.0",
+    "@capacitor/cli": "^3.0.0-rc.0",
+    "@capacitor/core": "^3.0.0-rc.0",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "@vue/cli-plugin-babel": "~4.4.0",

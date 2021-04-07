@@ -11,14 +11,14 @@
           width="30"
         />
 
-        <v-toolbar-title>VueKeep</v-toolbar-title>
+        <v-toolbar-title>Keep Notes App</v-toolbar-title>
       </div>
 
       <v-spacer></v-spacer>
       <v-btn icon @click="refresh" :loading="refreshLoading">
         <v-icon>mdi-refresh</v-icon>
       </v-btn>
-      <v-btn icon href="https://github.com/sorxrob/vue-keep" target="_blank">
+      <v-btn icon href="https://github.com/mayoujin/vue2-capacitor-pwa-keep-app" target="_blank">
         <v-icon>mdi-github</v-icon>
       </v-btn>
     </v-app-bar>
