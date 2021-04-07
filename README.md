@@ -2,7 +2,7 @@
 
 A Google Keep clone with Vue, Typescript and Firestore.
 
-This project is a simple Todo [PWA] (Progressive Web App). Based on [Vue.js] framework and [Vuetify] UI-kit technologies.
+This project is a Google Keep-like Notes taking App [PWA] (Progressive Web App). Based on [Vue.js] framework and [Vuetify] UI-kit technologies.
 Also, available Android and iOS hybrid mobile apps builds generation with [Capacitor 3].
 
 [capacitor 3]: https://capacitorjs.com/docs/v3
